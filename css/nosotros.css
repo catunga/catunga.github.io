@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #748C8A;
+  }
+  
+  header {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.logo a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #0d0d0d;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  ul a:hover{
+    color: #0d0d0d;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .corbata{
+    margin-top: 0px;
+    width: 200px;
+    margin-bottom: 40px;
+  }
+  .feature1 {
+    display: inline-block;
+    margin: 0 50px;
+    max-width: 300px;
+    color: #fff;
+    background-color: #05367Eaa;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .feature2 {
+    display: inline-block;
+    margin: 0 50px;
+    max-width: 300px;
+    color: #fff;
+    background-color: #DC1212aa;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .feature3 {
+    display: inline-block;
+    margin: 0 50px;
+    max-width: 300px;
+    color: #fff;
+    background-color: #EF6010aa;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .feature4 {
+    display: inline-block;
+    margin: 0 50px;
+    max-width: 300px;
+    color: #fff;
+    background-color: #366F28aa;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-width: 190px;
+    height: 316.53;
+    margin-top: 50px;
+
+  }
+
+  .empresa{
+    display: flex;
+    background-color: #F8FFEE;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.stella{
+  margin-right: auto;
+  width: 200px;
+  padding: 20px;
+}
+.empresa p{
+  text-align: right;
+}
+
+#redes{
+  text-align:center;
+  background-color: #01100E;
+  padding: 5px;
+}
+
+  footer img{
+    width: 30px;
+    padding-left: 30px;
+  }
+  .copy{
+    margin: 20px;
+    background-color: #748C8A;
+    text-align: center;
+    color: #fff;
+  }
+  .todo{
+    background-image: linear-gradient(#C0E1DE, #01100E);
+  }
