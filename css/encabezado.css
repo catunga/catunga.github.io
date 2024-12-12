@@ -1,0 +1,183 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FEFFF0;
+    margin:0;
+}
+
+.encabezado {
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.encabezado-menu {
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    border: #000000 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px auto;
+    font-family: 'Space Grotesk', monospace;
+    width: 100%;
+    box-shadow: 6px 6px #cccdc2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px; 
+    left: 10px;
+    z-index: 10; 
+}
+
+.nav-menu {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+}
+
+.icono-burger {
+    border: #000000 3px solid;
+    height:42px;
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    z-index:11;
+    display:none;
+
+}
+
+a{
+    color:black;
+}
+.encabezado-ideas, .encabezado-proyectos, .encabezado-nombre, .encabezado-profesional {
+    border: #000000 2px solid;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 166, 0, 0);
+    cursor: pointer;
+    padding: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.encabezado-ideas:hover, .encabezado-proyectos:hover, .encabezado-nombre:hover, .encabezado-profesional:hover {
+    transition: 0.5s;
+    text-decoration-color: rgba(255, 0, 238, 0.458);
+    text-decoration-line: line-through;
+    text-decoration-thickness: 15px;
+}
+
+.cuadradito {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border: 3px solid black;
+    display: inline-block;
+    position: relative;
+    z-index:16;
+}
+
+.cuadradito1 {
+    top: 16px;
+    right: 6px;
+}
+
+.cuadradito2 {
+    top: 16px;
+    left:calc(100% - 17px);
+}
+
+.cuadradito3 {
+    top: 66px;
+    right: 37px;
+}
+
+.cuadradito4 {
+    top: 66px;
+    left:calc(100% - 48px);
+
+}
+
+
+.cuadradito2, .cuadradito3, .cuadradito4 {
+    box-shadow: 6px 6px #cccdc2;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #c234db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .encabezado-ideas, .encabezado-proyectos, .encabezado-nombre, .encabezado-profesional {
+        display: block;
+        padding: 5px 0px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        margin:0px;
+    }
+
+    .icono-burger.active{
+        display: block;
+        box-shadow: 0px 0px #00000031;
+    }
+
+    .icono-burger{
+        display: inline-block;
+    }
+    .encabezado-menu{
+        flex-direction: column;
+    }
+
+    .cuadradito3.active, .cuadradito4.active{
+        top:212px;
+    }
+}
+
