@@ -1,5 +1,6 @@
 html, body {
     overflow-x: hidden;
+    
 }
 
 body {
@@ -17,7 +18,6 @@ body {
     position: relative;
     background-color: #ffffff;
     color: #000000;
-    border: #000000 3px solid;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -31,24 +31,31 @@ body {
 }
 
 .burger-menu {
-    
     display: none;
     font-size: 30px;
     cursor: pointer;
     position: absolute;
     top: 2px; 
     left: 10px;
-    z-index: 10; 
 }
 
 .nav-menu {
     display: flex;
     gap: 0px;
     width: 100%;
+    position: absolute;
+    top: 100%;
+
+    background-color: #ffffff;
+    z-index: 10;
+    border: #000000 3px solid;
+    box-shadow: 6px 6px #cccdc2;
 }
 
+
 .icono-burger {
-    border: #000000 3px solid;
+    
+    border: #000000 4px solid;
     height:42px;
     display: flex;
     gap: 0px;
@@ -57,6 +64,8 @@ body {
     display:none;
 
 }
+
+
 
 a{
     color:black;
@@ -102,7 +111,7 @@ a{
 }
 
 .cuadradito3 {
-    top: 66px;
+    top: 68px;
     right: 37px;
 }
 
@@ -147,9 +156,11 @@ a{
         display: block;
     }
 
+    
     .encabezado-ideas, .encabezado-proyectos, .encabezado-nombre, .encabezado-profesional {
         display: block;
         padding: 5px 0px;
+        box-shadow: 7px 0px #cccdc2;
     }
 
     .nav-menu {
@@ -158,26 +169,43 @@ a{
         width: 100%;
         margin-top: 50px;
     }
-
     .nav-menu.active {
         display: flex;
         margin:0px;
+        top: 92%;
+    
     }
-
+    
     .icono-burger.active{
         display: block;
-        box-shadow: 0px 0px #00000031;
+        box-shadow: 6px 0px #cccdc2;
+        border: #000000 4px solid;
     }
 
+    .cuadradito1{
+        top: 17px;
+    right: 9px;
+    }
+
+    .cuadradito3{
+        top: 66px;
+    right: 40px;
+    }
+
+    .cuadradito4{
+        top: 65px;
+    left: calc(100% - 50px);
+    }
     .icono-burger{
         display: inline-block;
+        box-shadow: 6px 6px #cccdc2;
     }
     .encabezado-menu{
         flex-direction: column;
     }
 
     .cuadradito3.active, .cuadradito4.active{
-        top:212px;
+        top:222px;
     }
 }
 

@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
     document.getElementById('loading-screen').style.display = 'none';
     let imagenes = document.querySelectorAll('.background-image');
     imagenes.forEach(imagen => {
-        imagen.style.display = 'none';
+        imagen.classList.add('hidden');
     });
 
 
@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     encabezado.addEventListener('animationend', () => {
         let imagenes = document.querySelectorAll('.background-image');
         imagenes.forEach(imagen => {
-            imagen.style.display = 'block';
+            imagen.classList.remove('hidden');
             imagen.classList.add('animate__animated', 'animate__fadeInUp');
         });
       });
