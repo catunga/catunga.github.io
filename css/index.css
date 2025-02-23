@@ -115,10 +115,21 @@ section{
     left: -2%;
     z-index: -2;
 }
-
+.lorvafotocelu {
+    display: none;
+}
 
 
 @media (max-width: 900px) {
+    .lorvafotocelu {
+        position: relative;
+        display: block;
+        background-image: url(../img/xd.png);
+        width: calc(500px - 1%);
+        height: calc(500px - 1%);
+        margin: 0px auto;
+        margin-top: 412px;
+    }
     .background-image1 {
         right: -7%;
         top:100px;
@@ -131,16 +142,10 @@ section{
     }
 
     .background-image3 {
-        width: 41%;
-        height: 30vw;
-        right: 29%;
-        top: 948px;
+        display: none;
     }
     .background-image4{
-        width: 106vw;
-        height: 90vw;
-        left: 7vw;
-        top: 1100px;
+        display: none;
 
     }
 
@@ -175,18 +180,6 @@ section{
     }
 }
 
-@media (max-width: 680px) {
-    .background-image4{
-        top: 105%;
-
-    }
-    .background-image3 {
-        width: 37%;
-        height: 26vw;
-        right: 29%;
-        top: 815px;
-    }
-}
 @media (max-width: 350px) {
     .background-image1 {
         display: none;
