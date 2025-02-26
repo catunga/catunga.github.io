@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
       });
 
     document.querySelectorAll('.section-content').forEach(section => {
-        if (section.id !== 'section-catunga') {
+        if (section.id !== 'section-presentacion') {
             section.style.display = 'none';
         }
     });
