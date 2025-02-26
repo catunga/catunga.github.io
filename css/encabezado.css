@@ -12,6 +12,9 @@ body {
     margin: 0px auto;
     margin-top: 50px;
     width: 50%;
+    z-index: 1000;
+    position: relative;
+    
 }
 
 .encabezado-menu {
@@ -28,6 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .burger-menu {

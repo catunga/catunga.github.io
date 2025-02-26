@@ -3,6 +3,15 @@ html{
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: none;
+}
+
 body {
     background-color: #FEFFF0;
     position: relative;
@@ -16,6 +25,7 @@ section{
     height: 100%;
     margin:0;
     padding-bottom: 200px;
+    z-index: 1;
 }
 .hidden {
     display: none !important;
@@ -31,12 +41,14 @@ section{
     font-weight: bold;
     color: #000000;
     top: 467px;
+    animation-delay: 1s; 
 }
 
-.subrayado{
-    text-decoration-color: #ffa6007d;
-    text-decoration-thickness: 25px;
-    text-decoration-line:line-through;
+
+
+.bienvenida span{
+    background: linear-gradient(to top, #FFDC58 50%, transparent 50%);
+
 }
 
 .acercademi{
@@ -54,6 +66,28 @@ section{
     border: #000000 7px solid;
     font-weight: bold;
     left: 5%;
+    cursor: pointer;
+    animation-delay: 1s; 
+}
+.acercademi::after {
+    content: url('../img/lineas.png'); 
+    position: absolute;
+    bottom:-49px;
+    right:-46px;
+    transition: all 0.5s ease; 
+    opacity: 0;
+    overflow: hidden;
+}
+
+.acercademi:hover::after {
+    bottom: -70px;
+    right: -70px;
+    opacity: 1; 
+    overflow: visible;
+}
+
+.acercademitexto{
+    text-decoration: none;
 }
 
 .background-images, .background-image{
@@ -115,6 +149,9 @@ section{
     left: -2%;
     z-index: -2;
 }
+
+
+
 .lorvafotocelu {
     display: none;
 }
