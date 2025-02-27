@@ -39,8 +39,8 @@ window.addEventListener('load', function() {
 
             let nextSection = document.getElementById(sectionId);
 
-
-            currentSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            let inicio = document.getElementById('ermwhatthesigma');
+            inicio.scrollIntoView({ behavior: "smooth", block: "start" });
             
             currentSection.classList.add('animate__animated', 'animate__fadeOut');
 

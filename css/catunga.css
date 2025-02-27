@@ -67,7 +67,7 @@
     column-gap: 20px; 
 }
 
-.texto3{
+.texto3 p{
     word-wrap: break-word;
     font-size: 2vw;
     font-family: 'Handlee', sans-serif;
@@ -77,4 +77,168 @@
     background: linear-gradient(to top, rgb(255, 192, 237) 90%, transparent 50%);
     width: fit-content;
     font-weight: 600;
+}
+
+.gustos{
+    position: relative;
+    top: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gusto{
+    width: 27%;
+    height: 27vw;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.escribir{
+    background-color: #FFE68C;
+    border: #EECD56 8px solid;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+}
+
+.editar{
+    background-color: #9DDCFF;
+    border: #5AB5E8 8px solid;
+    border-radius: 20px;
+    transform: rotate(10deg);
+}
+
+.musica{
+    background-color: #FFC9F0;
+    border: #F384D4 8px solid;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+}
+
+.gusto .imagen{
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+}
+
+.gusto p {
+    font-size: 2vw;
+    font-family: 'Inter', sans-serif;
+}
+
+.musica .imagen{
+    background-image: url('../img/musica.png');
+}
+
+.escribir .imagen{
+    background-image: url('../img/escribir.webp');
+}
+
+.editar .imagen{
+    background-image: url('../img/editar.jpeg');
+}
+
+.texto3 .imagen{
+    background-image: url(../img/flecha.png);
+    width: 4%;
+    height: 100px;
+    right: -11%;
+    top: 367px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mensajes{
+    word-wrap: break-word;
+    font-size: 2vw;
+    font-family: 'Handlee', sans-serif;
+    position: relative;
+    width: fit-content;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+}
+
+.mensaje1{
+    left: 22%;
+    top: 10px;
+    background: linear-gradient(to top, #9DDCFF 90%, transparent 50%);
+}
+
+.mensaje2{
+    top: -17px;
+    left: 58%;
+    background: linear-gradient(to top, rgb(255, 192, 237) 90%, transparent 50%);
+}
+
+.mensaje3{
+    right: 2%;
+    top: 16px;
+    background: linear-gradient(to top, #FFE68C 90%, transparent 50%);
+}
+
+.texto4 p{
+    word-wrap: break-word;
+    font-size: 5vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.texto4{
+    word-wrap: break-word;
+    font-size: 5vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 500px;
+    left: 30%;
+    position: relative;
+}
+
+.texto4 .imagen{
+    background-image: url(../img/carita2.png);
+    width: 10%;
+    height: 10vw;
+    right: 53%;
+    top: -28px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.redes{
+    top: 600px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.instagram, .discord{
+    background-image: url(../img/redes.png);
+    width: 41%;
+    height: 37vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.instagram .imagen{
+    background-image: url(../img/instagram.png);
+    width: 41%;
+    height: 37vw;
+}
+
+.discord .imagen{
+    background-image: url(../img/discord.png);
+    width: 41%;
+    height: 37vw;
 }
