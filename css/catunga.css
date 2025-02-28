@@ -559,3 +559,12 @@
     opacity: 1; 
     overflow: visible;
 }
+
+.background-image13{
+    background-image: url('../img/estrellarosa.png');
+    width: 10vw;
+    z-index: 1;
+    top: 47vw;
+    left: -14vw;
+    height: 13vw;
+}

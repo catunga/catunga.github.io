@@ -104,9 +104,22 @@ window.addEventListener('load', function() {
 
 
     document.querySelector('.goku5').addEventListener('click', function() {
+        // Añadir animación "tada" usando Animate.css
         this.classList.add('animate__animated', 'animate__tada');
+        
+        // Después de que termine la animación "tada", inicia la animación de desaparición
         this.addEventListener('animationend', function() {
+            // Elimina la clase de la animación "tada"
             this.classList.remove('animate__animated', 'animate__tada');
+            
+            // Aplicamos la transición de opacidad directamente con JavaScript
+            this.style.transition = "opacity 1s ease-out"; // Establece la transición
+            this.style.opacity = 0; // Cambia la opacidad a 0 para hacer que el elemento se desvanezca
+            
+            // Después de que la transición termine, ocultamos el elemento con display: none
+            this.addEventListener('transitionend', function() {
+                this.style.display = 'none';  // Ocultamos el elemento completamente
+            }, { once: true });
         }, { once: true });
     });
 
