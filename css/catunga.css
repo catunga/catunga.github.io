@@ -228,17 +228,318 @@
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.instagram .imagen{
+.instagram .imagen, .discord .imagen{
     background-image: url(../img/instagram.png);
-    width: 41%;
-    height: 37vw;
+    width: 72%;
+    height: 15.9vw;
+    position: relative;
+    top: 4vw;
+    background-repeat: no-repeat;
+    border: #000000 8px solid;
+    background-size: cover;
 }
 
 .discord .imagen{
     background-image: url(../img/discord.png);
+}
+
+.texto5{
+    position: relative;
+    top: 7vw;
+    right: 6.2vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto5 h3{
+    font-size: 2.4vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.texto5 p{    
+    font-size: 1.4vw;
+}
+
+.discord .texto5{
+    right: 8.2vw;
+}
+
+.link{
+    background-image: url(../img/link.png);
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    right: -11vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.discord .link{
+    right: -15vw;
+}
+
+.texto6{
+    word-wrap: break-word;
+    font-size: 3vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 800px;
+    left: 6%;
+}
+
+.opinion{
     width: 41%;
-    height: 37vw;
+    height: max-content;
+    border: #000000 4px solid;
+    background-color: white;
+    box-shadow: 6px 6px #cccdc2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    row-gap: 2vw;
+    padding-bottom: 1vw;
+}
+
+.opiniones{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 900px;
+    row-gap: 21px;
+}
+
+.opinion-texto{
+    word-wrap: break-word;
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 0.5vw;
+    left: 4%;
+    max-width: 84%;
+    margin: 2vw 0px;    
+}
+
+.foto{
+    background-image: url(../img/milaneso.png);
+    width: 4vw;
+    height: 4vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: #000000 2px solid;
+}
+
+.persona{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 4%;
+    top: -1vw;
+    width: 19vw;
+    align-items: flex-start;
+    height: 4vw;
+}
+
+.persona-nombre{
+    font-size: 1vw;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 0.5vw;
+    left: 5%;
+    display: flex;
+    row-gap: 6px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.persona-nombre h3{
+    margin: 0;
+}
+
+.persona-nombre p{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.leer-mas{
+    word-wrap: break-word;
+    font-size: 1.5vw;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin: 0;
+    background: none;
+    border: none;
+    background: linear-gradient(to top, rgb(255, 192, 237) 50%, transparent 50%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.entero{
+    display: none;  
+}
+
+.magui{
+    transform: rotate(2deg);
+    z-index: 1;
+}
+
+.seba{
+    transform: rotate(-3deg);
+    position: relative;
+    top: 70px;
+    z-index: 2;
+    left: -37px;
+}
+
+.willwood{
+    transform: rotate(3deg);
+    z-index: 3;
+    position: relative;
+    top: 47px;
+    left: 30px;
+}
+
+.agus{
+    z-index: 4;
+    position: relative;
+    top: 125px;
+    transform: rotate(4deg);
+    left: -88px;
+}
+
+.milaneso{
+    position: relative;
+    right: 269px;
+    top: 48px;
+    transform: rotate(-1deg);
+}
+
+.willwood .foto{
+    background-image: url(../img/willwood.png);
+}
+
+.seba .foto{
+    background-image: url(../img/seba.jpeg);
+}
+
+.magui .foto{
+    background-image: url(../img/magui.png);
+}
+
+.agus .foto{
+    background-image: url(../img/agus.png);
+}
+
+.goku5 .foto{
+    background-image: url(../img/goku5.png);
+}
+
+.catunga-final{
+    width: 41%;
+    border: #000000 5px solid;
+    background-color: white;
+    box-shadow: 6px 6px #cccdc2;
+    display: flex;
+    font-family: 'Space Grotesk', monospace;
+    position: relative;
+    top: 1300px;
+    width: 80%;
+    margin: auto;
+    height: 27vw;
+    flex-direction: column;
+    justify-content: space-around;;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.texto7{
+    font-family: 'Space Grotesk', monospace;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 13vw;
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    
+}
+
+.texto7 h3, .texto7 p{
+    margin: 0;
+}
+
+.catunga-final .encabezado-profesional{
+    width: 8vw;
+    height: 2vw;
+    top: -42px;
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.easteregg1{
+    position: absolute;
+    top: 20000px;
+    width: 80%;
+}
+
+.goku5 .persona{
+    width: 21vw;   
+}
+
+.background-image10{
+    background-image: url('../img/linea.png');
+    width: 26vw;
+    top: 6vw;
+}
+
+.background-image11{
+    background-image: url('../img/exclamacion.png');
+    width: 2vw;
+    left: 67vw;
+}
+
+.background-image12{
+    background-image: url('../img/estrellarosa.png');
+    width: 10vw;
+    z-index: 1;
+    bottom: 5vw;
+    right: 17vw;
+}
+
+.catunga-final .encabezado-profesional::after {
+    content: url('../img/lineas.png'); 
+    position: absolute;
+    bottom:-49px;
+    right:-46px;
+    transition: all 0.5s ease; 
+    opacity: 0;
+    overflow: hidden;
+}
+
+.catunga-final .encabezado-profesional:hover::after {
+    bottom: -70px;
+    right: -70px;
+    opacity: 1; 
+    overflow: visible;
 }

@@ -5,6 +5,40 @@ document.getElementById('encabezado-menu').addEventListener('click', function() 
     document.getElementById('cuadradito4').classList.toggle('active');
 });
 
+function leermas(nombre) {
+    const texto = document.querySelector('.'+nombre+' .opinion-texto');
+    switch (nombre) {
+        case 'magui':
+
+            break;
+
+        case 'seba':
+
+            break;
+
+        case 'agus':
+            if (texto.classList.contains('corto')) {
+                texto.classList.remove('corto');
+                texto.innerHTML = "“Una persona muy amable, creativa e innovadora. Asi tambien un peligro para la sociedad ^_^” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer menos </button> ";
+            } else {
+                texto.classList.add('corto');
+                texto.innerHTML = "“Una persona muy amable, creativa e innovadora...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
+            }
+            break;
+
+        case 'milaneso':
+            if (texto.classList.contains('corto')) {
+                texto.classList.remove('corto');
+                texto.innerHTML = "¿¿¿Que qué opino de catunga??? JA, estaba esperando este momento toda mi vida........... Catunga es... cómo decirlo ¿acaso es humano? No lo vean como un simple mortal que hace cosas de simples mortales, veanlo como un ser capaz de realizar las mayores genialidades y ATROCIDADES jamás pensadas. Catunga es aquello que más deseo y Catunga es aquello que más odio.  Pero ojo; Catunga es una buena persona; Catunga no hace maldades con malas intenciones; Catunga puede ser torpe, pero es inteligente, quizás el ser más capaz que conozco, para bien o para mal...Entonces, ¿qué es Catunga? Tengo miedo, pero tendré que decirlo igualmente: Catunga es creación, y Catunga es destrucción; una buena mezcla. Catunga me da paz. <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer menos </button> ";
+            } else {
+                texto.classList.add('corto');
+                texto.innerHTML = "“¿¿¿Que qué opino de catunga??? JA, estaba esperando este momento...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
+            }
+            break;
+    } 
+
+};
+
 window.addEventListener('load', function() {
     document.getElementById('loading-screen').style.display = 'none';
     let imagenes = document.querySelectorAll('.background-image');
