@@ -101,4 +101,18 @@ window.addEventListener('load', function() {
             }, { once: true });
         });
     });
+
+
+    document.querySelector('.goku5').addEventListener('click', function() {
+        this.classList.add('animate__animated', 'animate__tada');
+        this.addEventListener('animationend', function() {
+            this.classList.remove('animate__animated', 'animate__tada');
+        }, { once: true });
+    });
+
 });
+
+
+
+
+
