@@ -10,6 +10,13 @@ function leermas(nombre) {
     switch (nombre) {
         case 'magui':
 
+            if (texto.classList.contains('corto')) {
+                texto.classList.remove('corto');
+                texto.innerHTML = "“muy buen amix, muy creativo e inteligente :3 (ojalá no se le suba el ego porque es un egocéntrico ash)” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer menos </button> ";
+            } else {
+                texto.classList.add('corto');
+                texto.innerHTML = "            “muy buen amix, muy creativo e inteligente :3...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
+            }
             break;
 
         case 'seba':

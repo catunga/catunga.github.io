@@ -421,7 +421,7 @@
     position: relative;
     top: 70px;
     z-index: 2;
-    left: -37px;
+    right: 1vw;
 }
 
 .willwood{
@@ -429,7 +429,7 @@
     z-index: 3;
     position: relative;
     top: 47px;
-    left: 30px;
+    left: 1vw;
 }
 
 .agus{
@@ -437,12 +437,12 @@
     position: relative;
     top: 125px;
     transform: rotate(4deg);
-    left: -88px;
+    right: 2vw;
 }
 
 .milaneso{
     position: relative;
-    right: 269px;
+    right: 18vw;
     top: 48px;
     transform: rotate(-1deg);
 }
@@ -567,4 +567,9 @@
     top: 47vw;
     left: -14vw;
     height: 13vw;
+}
+
+.easteregg2{
+    text-decoration: none;
+    cursor: default;
 }
