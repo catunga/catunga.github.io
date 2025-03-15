@@ -218,5 +218,10 @@ a{
     .burger{
         display: block;
     }
+    
+    .cuadradito {
+        display: none;
+    }
+
 }
 
