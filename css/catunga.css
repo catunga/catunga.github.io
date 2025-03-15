@@ -67,12 +67,16 @@
     column-gap: 20px; 
 }
 
+.texto3{
+    top: 380px;
+    position: relative;
+}
+
 .texto3 p{
     word-wrap: break-word;
     font-size: 2vw;
     font-family: 'Handlee', sans-serif;
     position: relative;
-    top: 380px;
     left: 10%;
     background: linear-gradient(to top, rgb(255, 192, 237) 90%, transparent 50%);
     width: fit-content;
@@ -154,7 +158,6 @@
     width: 4%;
     height: 100px;
     right: -11%;
-    top: 367px;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -239,6 +242,7 @@
     align-items: center;
     transition: transform 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .instagram:hover, .discord:hover {
@@ -294,6 +298,12 @@
     right: -11vw;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.link a{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
 }
 
 .discord .link{
@@ -572,4 +582,289 @@
 .easteregg2{
     text-decoration: none;
     cursor: default;
+}
+
+.swal2-title{
+    font-family: 'Inter', sans-serif;
+    color: rgb(0 0 0);
+}
+
+.swal2-confirm{
+    background-color:none;
+    color: #000000;
+    background: linear-gradient(to top, rgb(255, 192, 237) 28%, transparent 89%);
+    font-weight: 600;
+}
+
+@media (max-width: 1300px) {
+
+    .texto1{
+        font-size: 12vw;
+        top: 48vw;
+        left: 6%;
+    }
+
+    .invitacion{
+        font-size: 5.5vw;
+        top: 59vw;
+        width: 70%;
+        left: 10%;
+    }
+
+    .external-menu{
+        padding: 3vw 2vw;
+    }
+
+    .texto3{
+        top: 74vw;
+    }
+
+    .texto3 p{
+        font-size: 5vw;
+    }
+
+    .texto3 .imagen{
+        width: 7vw;
+        height: 12vw;
+    }
+
+    .gustos{
+        flex-wrap: wrap;
+        top: 82vw;
+    }
+
+    .gusto{
+        width: 60%;
+        height: 58vw;
+    }
+
+    .gusto .imagen{
+        position: relative;
+        top: 3vw;
+    }
+
+    .gusto p {
+        font-size: 6vw;
+    }
+
+    .mensajes{
+        font-size: 5vw;
+    }
+
+    .mensaje1{
+        left: 64%;
+    }
+
+    .mensaje2{
+        top: 63vw;
+        left: 19%;
+    }
+
+    .mensaje3{
+        right: 16%;
+        top: 112vw;
+    }
+
+    .texto4{
+        left: 0;
+        width: fit-content;
+        margin: 0 auto;
+        top: 95vw;
+    }
+
+    .texto4 p{
+        font-size: 10vw;
+    }
+
+    .redes{
+        top: 89vw;
+        flex-wrap: wrap;
+    }
+
+    .instagram, .discord{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .instagram .imagen, .discord .imagen{
+        width: 71%;
+        height: 35vw;
+        top: 10vw;
+    }
+
+    .texto5{
+        top: 12vw;
+        right: 14.2vw;
+    }
+
+    .link{
+        width: 7vw;
+        height: 7vw;
+        right: -28vw;
+    }
+
+    .texto5 p{
+        font-size: 2.8vw;
+    }
+
+    .texto5 h3{
+        font-size: 6.4vw;
+    }
+
+    .discord .texto5{
+        font-size: 15.7vw;
+        right: 15.8vw;
+
+    }
+
+    .discord .link{
+        left: 51vw;
+    }
+
+    .texto6{
+        right: 15.8vw;
+        top: 104vw;
+        width: 90%;
+        font-size: 7vw;
+    }
+
+    .foto{
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .opiniones{
+        top: 119vw;
+    }
+
+    .opinion{
+        width: 80%;
+    }
+
+    .opinion-texto{
+        font-size: 4vw;
+        top: 2vw;
+        max-width: 90%;
+    }
+
+    .persona-nombre h3, .persona-nombre p{
+        font-size: 3vw;
+    }
+
+    .persona{
+        width: 80%;
+        top: 1vw;
+        height: 12vw;
+    }
+
+    .leer-mas{
+        font-size: 4vw;
+    }
+
+    .seba{
+        top: 6vw;
+    }
+
+    .willwood{
+        top: 12vw;
+    }
+
+    .agus{
+        top: 16vw;
+        transform: rotate(-1deg);
+    }
+
+    .milaneso{
+        right: 0;
+        top: 22vw;
+    }
+
+
+    .catunga-final{
+        top: 160vw;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 68vw;
+        width: 80%;
+    }
+
+    .texto7{
+        font-size: 5vw;
+        top: 3vw;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        height: 13vw;
+    }
+    .catunga-final .encabezado-profesional{
+        height: 5vw;
+        font-size: 4.5vw;
+        top: 4vw;
+        width: 100%;
+        padding: 3vw 4vw;
+    }
+
+    .goku5 .foto{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .goku5 .persona{
+        width: 84%;
+    }
+
+    .goku5{
+        width: 90%;
+    }
+
+    .background-image8{
+        width: 40%;
+        height: 14vw;
+        left: 0;
+        top: 1vw;
+    }
+
+    .background-image9{
+        width: 20%;
+        height: 18vw;
+        right: -7%;
+        top: 97vw;
+    }
+
+    .background-image7{
+        width: 17%;
+        height: 16vw;
+        right: 39%;
+        top: 22vw;
+    }
+
+    .texto4 .imagen{
+        width: 21%;
+        height: 15vw;
+        right: -13%;
+        bottom: 15vw;
+    }
+
+    .background-image10{
+        width: 48vw;
+        top: 13vw;
+    }
+
+    .background-image11{
+        width: 7vw;
+        left: 68vw;
+    }
+
+    .background-image12{
+        width: 23vw;
+        bottom: 12vw;
+        right: -5vw;
+    }
+
+    .background-image13{
+        width: 29vw;
+        top: 92vw;
+        left: -21vw;
+        height: 26vw;
+    }
 }

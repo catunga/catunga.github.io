@@ -1,9 +1,41 @@
-document.getElementById('encabezado-menu').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('active');
-    document.getElementById('icono-burger').classList.toggle('active');
-    document.getElementById('cuadradito3').classList.toggle('active');
-    document.getElementById('cuadradito4').classList.toggle('active');
-});
+
+
+document.getElementById('discord').addEventListener('click', function() {
+
+    let texto = "Catungap"
+  
+    navigator.clipboard.writeText(texto).then(function() {
+        Swal.fire({
+            title: "Se copió mi nombre de usuario :3",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(img/papel.webp)",
+            backdrop: `
+              rgb(44 0 39 / 31%);
+              url("img/nyancat.gif")
+              left top
+              no-repeat
+            `
+          });
+    }).catch(function(error) {
+        Swal.fire({
+            title: "Hubo un error al copiar el nombre UnU",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(img/papel.webp)",
+            backdrop: `
+              rgba(123, 0, 0, 0.4)
+              url("img/nyancat.gif")
+              left top
+              no-repeat
+            `
+          });
+    });
+
+    
+  });
 
 function leermas(nombre) {
     const texto = document.querySelector('.'+nombre+' .opinion-texto');
@@ -15,12 +47,18 @@ function leermas(nombre) {
                 texto.innerHTML = "“muy buen amix, muy creativo e inteligente :3 (ojalá no se le suba el ego porque es un egocéntrico ash)” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer menos </button> ";
             } else {
                 texto.classList.add('corto');
-                texto.innerHTML = "            “muy buen amix, muy creativo e inteligente :3...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
+                texto.innerHTML = "“muy buen amix, muy creativo e inteligente :3...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
             }
             break;
 
         case 'seba':
-
+            if (texto.classList.contains('corto')) {
+                texto.classList.remove('corto');
+                texto.innerHTML = "“Es alguien que cuando trabaja en serio es una de las mejores personas trabajando y realmente alguien que aporta mucho a un equipo de trabajo. Pero cuando no esta completamente en serio puede llegar a actuar como un niño de 8 años” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer menos </button> ";
+            } else {
+                texto.classList.add('corto');
+                texto.innerHTML = "“Es alguien que cuando trabaja en serio es una de las mejores personas...” <button class=\"leer-mas\" onclick=\"leermas('"+nombre+"')\"> Leer más </button> ";
+            }
             break;
 
         case 'agus':
@@ -47,6 +85,11 @@ function leermas(nombre) {
 };
 
 window.addEventListener('load', function() {
+
+    if (!window.location.hash) {
+        window.location.hash = '#presentacion';
+    }
+
     document.getElementById('loading-screen').style.display = 'none';
     let imagenes = document.querySelectorAll('.background-image');
     imagenes.forEach(imagen => {
@@ -58,26 +101,33 @@ window.addEventListener('load', function() {
     let encabezado = document.querySelector('#encabezado');
     encabezado.classList.add('animate__animated', 'animate__backInDown');
 
-    encabezado.addEventListener('animationend', () => {
-        let imagenes = document.querySelectorAll('.background-image');
-        imagenes.forEach(imagen => {
-            imagen.classList.remove('hidden');
-            imagen.classList.add('animate__animated', 'animate__fadeInUp');
-        });
-      });
-
-    document.querySelectorAll('.section-content').forEach(section => {
-        if (section.id !== 'section-presentacion') {
-            section.style.display = 'none';
+    
+        if (window.location.hash === '#catunga') {        
+            let imagenes = document.querySelectorAll('.background-image');
+            imagenes.forEach(imagen => {
+                imagen.classList.remove('hidden');
+                imagen.classList.add('animate__animated', 'animate__fadeInUp');
+            });
+        } else {
+            encabezado.addEventListener('animationend', () => {
+                let imagenes = document.querySelectorAll('.background-image');
+                imagenes.forEach(imagen => {
+                    imagen.classList.remove('hidden');
+                    imagen.classList.add('animate__animated', 'animate__fadeInUp');
+                });
+            });
         }
-    });
+    
+
+
+      
+
 
     document.querySelectorAll('.seccion').forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             let sectionId = this.getAttribute('data-section');
             let currentSection = document.querySelector('.section-content:not([style*="display: none"])');
-
             let nextSection = document.getElementById(sectionId);
 
             let inicio = document.getElementById('ermwhatthesigma');
@@ -94,7 +144,7 @@ window.addEventListener('load', function() {
                 nextSection.classList.add('animate__animated', 'animate__fadeInUp');
 
                 nextSection.addEventListener('animationend', function() {
-                    nextSection.classList.remove('animate__animated', 'animate__fadeIn');
+                    nextSection.classList.remove('animate__animated', 'animate__fadeInUp');
                 }, { once: true });
                 let sectionName = sectionId.replace('section-', '');
                 history.pushState(null, '', `#${sectionName}`);
@@ -109,26 +159,42 @@ window.addEventListener('load', function() {
         });
     });
 
+    window.addEventListener('popstate', function(event) {
+        let hash = window.location.hash.substring(1);
+        let sectionId = `section-${hash}`;
+        let currentSection = document.querySelector('.section-content:not([style*="display: none"])');
+        let nextSection = document.getElementById(sectionId);
 
-    document.querySelector('.goku5').addEventListener('click', function() {
-        // Añadir animación "tada" usando Animate.css
-        this.classList.add('animate__animated', 'animate__tada');
-        
-        // Después de que termine la animación "tada", inicia la animación de desaparición
-        this.addEventListener('animationend', function() {
-            // Elimina la clase de la animación "tada"
-            this.classList.remove('animate__animated', 'animate__tada');
-            
-            // Aplicamos la transición de opacidad directamente con JavaScript
-            this.style.transition = "opacity 1s ease-out"; // Establece la transición
-            this.style.opacity = 0; // Cambia la opacidad a 0 para hacer que el elemento se desvanezca
-            
-            // Después de que la transición termine, ocultamos el elemento con display: none
-            this.addEventListener('transitionend', function() {
-                this.style.display = 'none';  // Ocultamos el elemento completamente
-            }, { once: true });
-        }, { once: true });
+        if (nextSection) {
+            currentSection.style.display = 'none';
+            nextSection.style.display = 'block';
+
+            if (hash === 'catunga') {
+                encabezado.style.display = 'none';
+            } else {
+                encabezado.style.display = 'block';
+            }
+        }
     });
+
+    let hash = window.location.hash.substring(1);
+    if (hash) {
+        let sectionId = `section-${hash}`;
+        let nextSection = document.getElementById(sectionId);
+
+        if (nextSection) {
+            document.querySelectorAll('.section-content').forEach(section => {
+                section.style.display = 'none';
+            });
+            nextSection.style.display = 'block';
+
+            if (hash === 'catunga') {
+                encabezado.style.display = 'none';
+            } else {
+                encabezado.style.display = 'block';
+            }
+        }
+    }
 
 });
 
