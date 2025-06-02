@@ -1,0 +1,19 @@
+.button {
+    position: absolute;
+    padding: 10px 100px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: #000000 5px solid;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 166, 0, 0);
+}
+
+@media (max-width: 1400px) {
+    .button {
+        font-size: 5vw;
+        padding: 2vw 10vw;
+    }
+}

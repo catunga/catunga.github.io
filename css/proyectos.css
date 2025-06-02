@@ -1,0 +1,82 @@
+.proyectos{
+ 
+    top:120px;
+    justify-content: space-evenly;
+    row-gap: 3vw;
+}
+.proyecto-imagen{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #000000 0.2vw solid;
+}
+
+.proyecto1 .proyecto-imagen{
+    background-image: url(../img/pagina.png);
+}
+
+.proyecto2 .proyecto-imagen{
+    background-image: url(../img/instagram.png);
+}
+
+.proyectos .opinion{
+    display: flex;
+    height: 25vw;
+}
+
+
+
+@media (max-width: 1300px) {
+    .proyectos .opinion {
+            width: 41%;
+            height: 25vw;
+            border: #000000 4px solid;
+            background-color: white;
+            box-shadow: 6px 6px #cccdc2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            row-gap: 2vw;
+            padding-bottom: 1vw;
+            transition: transform 0.3s ease;
+    }
+    .proyectos .opinion .opinion-texto {
+        word-wrap: break-word;
+        font-size: 1.5vw;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        top: 0.5vw;
+        left: 4%;
+        max-width: 84%;
+        margin: 2vw 0px;    
+    }
+}
+
+.link-proyecto {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.opinion-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+ .proyectos .opinion{
+    height: 70vw;
+    width: 80%;
+}   
+.proyectos{
+    justify-content: space-evenly;
+    row-gap: 7vw;
+}
+.proyectos .opinion .opinion-texto {
+    font-size: 6vw;   
+}
+}
+

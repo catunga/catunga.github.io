@@ -1,6 +1,5 @@
 html, body {
     overflow-x: hidden;
-    
 }
 
 body {
@@ -218,7 +217,7 @@ a{
     .burger{
         display: block;
     }
-    
+
     .cuadradito {
         display: none;
     }
